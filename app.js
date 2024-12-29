@@ -1,5 +1,6 @@
 import "dotenv/config";
 import express from "express";
+import bodyParser from "body-parser";
 import fetch from "node-fetch";
 
 const app = express()
@@ -17,8 +18,8 @@ app.get('/', (req, res) => {
 
 app.post('/correct', async (req, res) => {
     //userText
-    console.log(req)
-    /* const userText = req.body.text.trim()
+    console.log(req.body)
+            const userText = req.body.text.trim()
     if (!userText) {
         res.render('index', {
             corrected: 'Please provide input some text'
@@ -60,7 +61,7 @@ app.post('/correct', async (req, res) => {
             corrected: 'Error. Please try again',
             originalText: userText
         })
-    }  */
+    }  
 })
 
 
