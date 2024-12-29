@@ -1,0 +1,31 @@
+{
+  "name": "grammarian",
+  "version": "1.0.0",
+  "description": "grammar corrector",
+  "keywords": [
+    "nodejs",
+    "openai",
+    "express"
+  ],
+  "homepage": "https://github.com/kzaid0767/grammarian#readme",
+  "bugs": {
+    "url": "https://github.com/kzaid0767/grammarian/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kzaid0767/grammarian.git"
+  },
+  "license": "ISC",
+  "author": "Kassim Zaid",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "node-fetch": "^3.3.2"
+  }
+}

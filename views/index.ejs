@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Grammar Assistant</title>
+</head>
+<body>
+    <h1>AI Grammar Assistant</h1>
+    <form action="/correct" method="post">
+        <input type="text" name="text" id="text">
+            <%=originalText || '' %>
+        </input >
+        <button>Submit</button>
+    </form>
+
+    <p>
+        <%=corrected?corrrected :  'Please make a request'  %>
+    </p>
+
+
+</body>
+</html>
